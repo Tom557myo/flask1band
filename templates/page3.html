@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<Div class = "content">
+    <h1>
+        Rate A Map & Feedback!<br>
+    </h1>
+<div class="container">
+    <form action="my_name" method="post">
+        <input type="Text" Name="added_map" id="addmap" placeholder="Add the Map" required>
+        <input type="Text" Name="added_feedback" id="addfeedback" placeholder="Add Some feedback" required>
+        <button type="submit">Submit Map</button>
+    </form>
+</div>
+</Div>
+<Div class="content">
+    <p>Rated Maps by the comunity</p>
+    <ol>
+        {% for entry in favourite_bands %}
+    <li>
+        {% if entry.Map %}
+
+    <strong>Map:</strong> {{ entry.Map }}<br>
+
+        {% endif %}
+        {% if entry.Feedback %}
+
+    <strong>Feedback:</strong> {{ entry.Feedback }}<br>
+        {% endif %}
+    </li>
+        {% endfor %}
+    </ol>  
+</Div>
+{% endblock %}

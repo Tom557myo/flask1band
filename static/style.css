@@ -1,0 +1,53 @@
+body{
+    background-image: url(Background.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+body {
+    font-family: Arial, sans-serif;;
+    align-content: center;
+    color: rgb(255, 255, 255);
+
+}
+.section {
+    align-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    margin: auto;
+    border-radius: 20px;
+    width: 30%;
+}
+.content {
+    align-content: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    margin: 20px auto;
+    border-radius: 20px;
+    width: 60%;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    margin: 5px auto;
+}
+nav a {
+    color: rgb(253, 253, 253);
+    padding: 10px 15px;
+    text-decoration: none;
+    align-items: center;
+}
+nav a:hover {
+    background-color: #002631;
+    border-radius: 20px;
+    color: #b1adadd3
+}
+.footer{
+    align-content: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px;
+    margin: 5px auto;
+    border-radius: 20px;
+    width: 100%;
+}
